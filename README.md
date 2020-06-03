@@ -28,6 +28,10 @@ feer-init <project-name>
 npx feer-init <project-name>
 ```
 
+<p align='center'>
+  <img src='./screenshot.svg' width='600' alt='npm start'>
+</p>
+
 ### 支持pc和h5场景选择
 
 在使用 `feer-init` 命令创建过程中，会提供模板选择功能:
