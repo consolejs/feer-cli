@@ -1,16 +1,17 @@
 
-# Feer-init
+## Feer-init
 
-快速构建前端应用开发环境 `Feer`. 🚀 
+快速构建前端应用开发环境 `Feer`. &ensp;🚀 
 
-## 什么是 Feer?
+
+### 什么是 Feer?
 
 `Feer`, 基于[RollupJS](https://www.rollupjs.com/) 打造的前端工具集成环境.
 
 > 命名灵感来自 `F`ront-`E`nd Engine`er`, 即前端工程构建师 `FEer`, 类似`PHPer`、`JAVAer` 
 
 
-[**English DOC**](README_EN.md)
+[**English**](./README_EN.md)
 
 
 ### 使用
@@ -29,7 +30,7 @@ npx feer-init <project-name>
 ```
 
 <p align='center'>
-  <img src='./screenshot.svg' width='600' alt='npm start'>
+  <img src='./screenshot.svg' width='640' alt='yarn start'>
 </p>
 
 ### 支持pc和h5场景选择
