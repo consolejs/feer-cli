@@ -1,6 +1,6 @@
 {
   "name": "feer-cli",
-  "version": "0.0.3",
+  "version": "0.0.4",
   "description": "Fast initialize the Feer.",
   "main": "index.js",
   "bin": {
@@ -12,9 +12,9 @@
     "url": "git+https://github.com/consolejs/feer-cli.git"
   },
   "keywords": [
-    "init",
-    "project",
-    "quick"
+    "fe",
+    "rollup",
+    "fast"
   ],
   "author": "Vincent",
   "license": "MIT",
