@@ -119,7 +119,7 @@ function createApp(type) {
     __dirname,
     '..',
     'feedback',
-    // type, //可针对不用模板，安装后作不同的回调处理
+    // type, //可针对不同的模板，安装后作不同的回调处理
     'afterinstall.js'
   );
 
