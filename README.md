@@ -1,5 +1,5 @@
 
-## Feer-init
+## feer-init
 
 快速构建前端应用开发环境 `Feer`. &ensp;🚀 
 
@@ -8,7 +8,7 @@
 
 `Feer`, 基于[RollupJS](https://www.rollupjs.com/) 打造的前端工具集成环境.
 
-> 命名灵感来自 `F`ront-`E`nd Engine`er`, 即前端工程构建师 `FEer`, 类似`PHPer`、`JAVAer` 
+> 命名灵感来自 **`F`** ront- **`E`** nd&ensp; Engine **`er`**, 即前端工程构建师 `FEer`, 类似`PHPer`、`JAVAer` 
 
 
 [**English**](./README_EN.md)
