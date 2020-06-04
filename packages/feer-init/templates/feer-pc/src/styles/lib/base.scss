@@ -1,0 +1,57 @@
+html {
+    overflow-y: hidden;
+}
+
+body {
+    font-family: 'PingFang SC', 'Hiragino Sans GB', 'Microsoft YaHei', 'WenQuanYi Micro Hei', 'Helvetica Neue', Arial, sans-serif;
+    font-size: 12px;
+    line-height: 1;
+    color: #3d3d3d;
+    position: relative;
+    zoom: 1;
+    overflow: hidden;
+}
+
+a {
+    color: #3d3d3d;
+    text-decoration: none;
+    cursor: pointer;
+}
+
+input::-ms-clear {
+    display: none;
+}
+
+%underline {
+    &:hover {
+        text-decoration: underline;
+    }
+}
+
+.cf:before,
+.cf:after {
+    content: "\20";
+    display: table;
+}
+
+.cf:after {
+    clear: both;
+}
+
+.cf {
+    zoom: 1;
+}
+
+.usn {
+    -webkit-user-select: none;
+    -moz-user-select: none;
+    -ms-user-select: none;
+    -o-user-select: none;
+}
+
+.ct {
+    font-size: 0;
+    line-height: 0;
+    text-indent: -999rem;
+    overflow: hidden;
+}
