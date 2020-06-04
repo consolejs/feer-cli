@@ -1,5 +1,5 @@
 
-## feer-init
+## feer-cli
 
 快速构建前端应用开发环境 `Feer`. &ensp;🚀 
 
@@ -18,15 +18,15 @@
 
 - 全局安装
 ```bash
-npm i feer-init -g
+npm i feer-cli -g
 ```
 - 默认使用
 ```
-feer-init <project-name>
+feer <project-name>
 ```
 - 或者
 ```bash
-npx feer-init <project-name>
+npx feer-cli <project-name>
 ```
 
 <p align='center'>
@@ -35,7 +35,7 @@ npx feer-init <project-name>
 
 ### 支持pc和h5场景选择
 
-在使用 `feer-init` 命令创建过程中，会提供模板选择功能:
+在使用 `feer-cli` 命令创建过程中，会提供模板选择功能:
 
 ```bash
 ? Which type do you want to create? (Use arrow keys)
