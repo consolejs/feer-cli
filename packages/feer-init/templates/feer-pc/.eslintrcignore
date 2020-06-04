@@ -1,4 +1,0 @@
-#src/libs/
-node_modules/
-build/*
-.temp/*
