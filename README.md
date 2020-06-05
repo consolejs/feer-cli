@@ -1,6 +1,10 @@
+<p>
+	<img alt="Front End Developer Integration." src="./logo.jpg">
+</p>
+
 # Feer
 
-`Feer`, 基于[RollupJS](https://www.rollupjs.com/) 打造的前端工具集成环境. &ensp;🚀 
+**`Feer`**, 基于[RollupJS](https://www.rollupjs.com/) 打造的前端工具集成环境. &ensp;🚀 
 
 > 命名灵感来自 **`F`** ront- **`E`** nd&ensp; Engine **`er`**, 即前端工程构建师 `FEer`, 类似`PHPer`、`JAVAer` 
 
@@ -81,7 +85,10 @@ npx feer-cli <project-name>
 
 * 
 
-## License
+-->
+
+
+### License
 
 [MIT](./LICENSE)
- -->
+ 

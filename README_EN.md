@@ -1,10 +1,10 @@
 <p>
-	<img alt="Front End Developer Integration." src="./logo.jpg">
+	<img alt="Front-End Developer Integration." src="./logo.jpg">
 </p>
 
 # Feer
 
-`Feer` : Front End Engineer Integration. Fast build tool integration based on [RollupJS](https://www.rollupjs.com/). &ensp;🚀 
+**`Feer`** : Front-End Developer Integration. Fast build tool integration based on [RollupJS](https://www.rollupjs.com/). &ensp;🚀 
 
 > The naming inspiration comes from **`F`** ront- **`E`** nd&ensp; Engine **`er`**, that is "FEer", &ensp;such as "PHPer"、 "JAVAer"
 
@@ -59,9 +59,9 @@ template selection is provided:
 ### configuration folder
 
 ```c
-├── build.js ----> nunjucks模板处理
-├── server.js ----> fastify静态服务器、路由处理
-└── rollup.config.js ---> RollupJS配置文件, 内可配置环境变量
+├── build.js ----> Nunjucks template processing
+├── server.js ----> Fastify static server, routing processing
+└── rollup.config.js ---> RollupJS configuration file, configurable environment variables
 ```
 
 ### source folder
@@ -87,7 +87,10 @@ template selection is provided:
 
 * 
 
-## License
+ -->
+
+### License
 
 [MIT](./LICENSE)
- -->
+ 
+
