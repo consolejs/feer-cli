@@ -2,13 +2,11 @@
 	<img alt="Front End Developer Integration." src="./logo.jpg">
 </p>
 
-# Feer-cli
+# Feer
 
-Fast cliialize the __`Feer`__.&ensp;🚀 
+`Feer` : Front End Engineer Integration. Fast build tool integration based on [RollupJS](https://www.rollupjs.com/). &ensp;🚀 
 
-## What is Feer?
-
-`Feer` : Front End Developer Integration. Build tool integration based on [RollupJS](https://www.rollupjs.com/). 
+> The naming inspiration comes from **`F`** ront- **`E`** nd&ensp; Engine **`er`**, that is "FEer", &ensp;such as "PHPer"、 "JAVAer"
 
 [**中文**](./README.md)
 
