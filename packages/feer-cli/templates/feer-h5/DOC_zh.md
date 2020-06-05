@@ -36,7 +36,6 @@ yarn build 或 npm run build
 
 ### config 配置文件夹
 
-如果 `app.config.js` 提供的配置项不能满足你的项目需要，可以通过 `webpack.dev.config.js` 和 `webpack.prod.config.js` 进行重写定制。
 ```c
 ├── build.js ----> nunjucks模板处理
 ├── server.js ----> fastify静态服务器、路由处理
