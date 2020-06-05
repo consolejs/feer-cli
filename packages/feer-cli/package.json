@@ -12,9 +12,9 @@
     "url": "git+https://github.com/consolejs/feer-cli.git"
   },
   "keywords": [
-    "web",
     "rollupjs",
-    "build"
+    "front-end",
+    "build-tools"
   ],
   "author": "Vincent",
   "license": "MIT",
