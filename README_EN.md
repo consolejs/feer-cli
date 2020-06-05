@@ -1,5 +1,5 @@
-<p>
-	<img alt="Front End Developer Integration." src="./logo.png">
+<p style="text-align: center">
+	<img alt="Front End Developer Integration." src="./logo2.png">
 </p>
 
 # Feer-cli
