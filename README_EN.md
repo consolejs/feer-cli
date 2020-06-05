@@ -4,7 +4,7 @@
 
 # Feer
 
-**`Feer`** : Front-End Developer Integration. Fast build tool integration based on [RollupJS](https://www.rollupjs.com/). &ensp;🚀 
+**`Feer`** : Front-End Developer Integration. Fast built integrated tools based on [RollupJS](https://www.rollupjs.com/). &ensp;🚀 
 
 > The naming inspiration comes from **`F`** ront- **`E`** nd&ensp; Engine **`er`**, that is "FEer", &ensp;such as "PHPer"、 "JAVAer"
 
