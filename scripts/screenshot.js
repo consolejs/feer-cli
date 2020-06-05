@@ -1,3 +1,6 @@
+/* eslint-disable */
+
+
 /**
  * This script used to generate svg via json file.
  */

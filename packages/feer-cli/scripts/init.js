@@ -1,3 +1,5 @@
+/* eslint-disable */
+
 /**
  * Copy specified template to project.
  */
