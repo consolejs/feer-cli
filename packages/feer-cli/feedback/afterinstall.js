@@ -1,9 +1,11 @@
 /* eslint-disable */
 
 const chalk = require('chalk');
+
 const loc =  "127.0.0.1";
-const address = require('address'); //获取IP地址
-const ip4 = address.ip() || loc;
+let address;
+address = require('address'); //可以获取，并使用 本机IP地址
+const ip4 =  address ? address.ip() : loc;
 
 module.exports = projectName => {
   console.log(

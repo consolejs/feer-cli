@@ -1,6 +1,6 @@
 {
   "name": "feer-cli",
-  "version": "0.0.5",
+  "version": "0.0.7",
   "description": "Fast initialize the Feer.",
   "main": "index.js",
   "bin": {
@@ -28,5 +28,8 @@
     "cross-spawn": "^6.0.5",
     "fs-extra": "^6.0.1",
     "inquirer": "^5.2.0"
+  },
+  "devDependencies": {
+    "address": "^1.1.2"
   }
 }

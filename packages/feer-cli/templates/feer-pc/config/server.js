@@ -6,8 +6,9 @@ const fastify = require("fastify")({
   logger: false
 });
 
-const address = require('address'); //获取IP地址
-const ip4 = address.ip() || "127.0.0.1/";
+let address;
+address = require('address'); //可以获取，并使用 本机IP地址
+const ip4 =  address ? address.ip() : "127.0.0.1";
 
 //A better opn. Reuse the same tab on Chrome for 👨‍💻.
 const opn = require('better-opn'); 
