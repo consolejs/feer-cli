@@ -83,11 +83,11 @@ npx feer-cli <project-name>
 
 ### 特性
 
-* 基于RollupJS模块快速打包，让bundle最小化
+* 基于`RollupJS`快速打包，让bundle最小化
 * Tree-shaking帮助你移除无用代码
 * 支持单/多页面开发
 * 支持Proxy代理访问接口
-* 基于mockjs 模拟 api
+* 基于MockJS 模拟 api
 * 配置简单便捷、打包迅速
 * Nunjucks, 功能丰富、强大的模板引擎
 * 支持Sass、Less强大的CSS扩展语言
