@@ -26,6 +26,7 @@ export default {
     name,
     file: BUILD ? 'build/js/index.js' : '.temp/js/index.js',
     format: 'iife',
+    extend: true,
     minify: true,
     globals: {
       jquery: '$'
