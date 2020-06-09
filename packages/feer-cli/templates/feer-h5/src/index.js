@@ -1,4 +1,4 @@
 import './styles/index.scss';
 
 
-console.log(1);
+// console.log('foo');
