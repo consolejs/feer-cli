@@ -4,7 +4,7 @@
 
 # Feer
 
-**`Feer`**, 基于[RollupJS](https://www.rollupjs.com/) 打造的前端工具集成环境. &ensp;🚀 
+**`Feer`** 基于[RollupJS](https://www.rollupjs.com/) 打造的前端工具集成环境. &ensp;🚀 
 
 > 命名灵感来自 **`F`** ront- **`E`** nd&ensp; Engine **`er`**, 即前端工程构建师 `FEer`, 类似`PHPer`、`JAVAer` 
 
@@ -29,9 +29,9 @@ feer <project-name>
 npx feer-cli <project-name>
 ```
 
-### 支持pc和h5场景选择
+### 场景支持
 
-在使用 `feer` 命令创建过程中，会提供模板选择功能:
+在使用 `feer` 命令创建过程中，会提供模板选择功能, 支持 `PC`和`H5` :
 
 ```bash
 ? Which type do you want to create? (Use arrow keys)
@@ -39,7 +39,7 @@ npx feer-cli <project-name>
   H5 - (build the h5 page)
 ```
 
-## 项目目录结构
+### 文件目录结构
 
 ```c
 ├── .babelrc ---> babel配置文件
@@ -55,7 +55,7 @@ npx feer-cli <project-name>
 └── src ---> 源代码文件夹
 ```
 
-### config 配置文件夹
+### config 配置
 
 ```c
 ├── build.js ----> nunjucks模板处理
@@ -63,7 +63,7 @@ npx feer-cli <project-name>
 └── rollup.config.js ---> RollupJS配置文件, 内可配置环境变量
 ```
 
-### src 文件夹
+### src 代码资源
 
 ```c
 ├── libs ---> 可存放引入的第三方库文件
@@ -72,7 +72,15 @@ npx feer-cli <project-name>
 └── styles ---> scss 源代码文件夹, 可自定义
 ```
 
-### build 文件夹
+### views 模板文件
+
+```c
+├── common ---> 存放公共模板, 如parent、header、footer等
+├── mods ---> 各个模块业务模板
+└── index.html ---> 主页面模板, 可结合路由自定义配置其他页面
+```
+
+### build 编译输出
 
 ```c
 ├── index.html ---> html模板文件
