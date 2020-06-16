@@ -53,8 +53,8 @@ export default {
           src: 'src/*.js',
           dest: BUILD ? 'build/js/' : '.temp/js/'
         },
-        { // 已不使用本地图片，改为cdn地址
-          src: ['!images/*', '!images/sprite'],
+        { // 若不使用本地图片,可改为cdn地址
+          src: ['images/*', '!images/sprite'],
           dest: BUILD ? 'build/img/' : '.temp/img/'
         }
       ]
