@@ -1,5 +1,5 @@
 <p>
-	<img alt="Front End Developer Integration." src="./logo.jpg">
+	<img alt="Front End Developer Integration." src="./static/logo.jpg">
 </p>
 
 # Feer
