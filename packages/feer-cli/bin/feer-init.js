@@ -27,9 +27,9 @@ program
   .parse(process.argv);
 
 if (!projectName) {
-  error('\n请输入项目名称: \n');
+  error('\nPlease enter the project name: \n');
   log(
-    `如: ${chalk.cyan(program.name())} ${chalk.green('feer-app')}\n`
+    `Such as: ${chalk.cyan(program.name())} ${chalk.green('feer-app')}\n`
   );
   process.exit(1);
 }
