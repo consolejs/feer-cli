@@ -1,6 +1,6 @@
 {
   "name": "feer-cli",
-  "version": "0.1.7",
+  "version": "0.1.8",
   "description": "Fast initialize the Feer.",
   "main": "index.js",
   "bin": {
@@ -22,7 +22,6 @@
     "url": "https://github.com/consolejs/feer-cli/issues"
   },
   "homepage": "https://github.com/consolejs/feer-cli#readme",
-  "files":[".gitignore"],
   "dependencies": {
     "chalk": "^2.4.1",
     "commander": "^2.15.1",
