@@ -1,6 +1,6 @@
 {
   "name": "feer-cli",
-  "version": "0.1.8",
+  "version": "0.1.9",
   "description": "Fast initialize the Feer.",
   "main": "index.js",
   "bin": {
