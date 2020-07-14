@@ -1,7 +1,20 @@
-  
 {
-    "eslint.alwaysShowStatus": false,
-    "prettier.trailingComma": "es5",
-    "prettier.singleQuote": true,
-    "prettier.printWidth": 120
-  }
+  // tab 大小为4个空格
+  "editor.tabSize": 4, 
+  //总是显示状态
+  "eslint.alwaysShowStatus": false,
+  // 开启 vscode 文件路径导航
+  "breadcrumbs.enabled": true,
+  // 尾随逗号
+  "prettier.trailingComma": "es5",
+  // prettier 设置强制单引号
+  "prettier.singleQuote": true,
+  // 格式化缩进字节数
+  "prettier.tabWidth": 4,
+  // 超过最大值换行
+  "prettier.printWidth": 120,
+  // csscomb 配置 
+  "csscomb.formatOnSave": true, 
+  //三种模式： zen、csscomb、yandex
+  "csscomb.preset": "zen"
+}
