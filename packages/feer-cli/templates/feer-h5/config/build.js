@@ -1,5 +1,8 @@
 /* eslint-disable */
 
+const appConfig = require("./app");// 本地配置
+const { pageName } = appConfig || {}; 
+
 const path = require("path");
 const nunjucks = require("nunjucks");
 const fs = require("fs");
@@ -27,7 +30,7 @@ function toRender(name) {
 }
 
 // 待渲染文件名
-const filesNames = ['index'];
+const filesNames = pageName;
 
 // 执行渲染
 for (let i in filesNames) {

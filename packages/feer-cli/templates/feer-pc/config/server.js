@@ -1,14 +1,17 @@
 /* eslint-disable */
 
+const appConfig = require("./app");// 本地配置
+const { port, pageName } = appConfig || {}; 
+
 const path = require("path");
 const fetch = require("node-fetch");
 const fastify = require("fastify")({
   logger: false
 });
 
-let address;
-address = require('address'); //可以获取，并使用 本机IP地址
-const ip4 =  address ? address.ip() : "127.0.0.1";
+let addr;
+addr = require('address'); //可以获取，并使用 本机IP地址
+const ip4 =  addr ? addr.ip() : "127.0.0.1";
 
 //A better opn. Reuse the same tab on Chrome for 👨‍💻.
 const opn = require('better-opn'); 
@@ -22,7 +25,6 @@ fastify.register(require("point-of-view"), {
     filename: path.resolve("views")
   }
 });
-
 
 
 fastify.register(require("fastify-static"), {
@@ -39,7 +41,7 @@ function configRouter(name) {
 }
 
 // 路由名字,首页一般为空 '/'
-const routerNames = ["", "index"];
+const routerNames = [''].concat(pageName);
 
 // 执行配置
 for (let i in routerNames) {
@@ -60,9 +62,8 @@ fastify.get(pathname, async (request, reply) => {
 });
 
 // 启用静态服务，4000端口
-const port = 4000;
 fastify.listen(port, ip4, (err, address) => {
   if (err) throw err;
-  fastify.log.info(`server listening on ${address}`);
-  opn(address);//同一chrome tab内打开
+  fastify.log.info(`server listening on ${ip4}`);
+  opn(ip4);//同一chrome tab内打开
 });
