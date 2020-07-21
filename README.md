@@ -58,6 +58,7 @@ npx feer-cli <project-name>
 ### config 配置
 
 ```c
+├── app.js -----> 本地配置, 如port、route、mock等
 ├── build.js ----> nunjucks模板处理
 ├── server.js ----> fastify静态服务器、路由处理
 └── rollup.config.js ---> RollupJS配置文件, 内可配置环境变量

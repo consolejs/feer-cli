@@ -59,6 +59,7 @@ template selection is provided:
 ### configuration folder
 
 ```c
+├── app.js -----> Local configuration, such as port/Route/Mock etc.
 ├── build.js ----> Nunjucks template processing
 ├── server.js ----> Fastify static server, routing processing
 └── rollup.config.js ---> RollupJS configuration file, configurable environment variables
