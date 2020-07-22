@@ -64,6 +64,6 @@ fastify.get(pathname, async (request, reply) => {
 // 启用静态服务，4000端口
 fastify.listen(port, ip4, (err, address) => {
   if (err) throw err;
-  fastify.log.info(`server listening on ${ip4}`);
-  opn(ip4);//同一chrome tab内打开
+  fastify.log.info(`server listening on ${address}`);
+  opn(address);//同一chrome tab内打开
 });
