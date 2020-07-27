@@ -27,7 +27,7 @@ const miniFun = (res) => {
 }
 
 //去字符串左右空格
-function trim(str) { //删除左右两端的空格
+function trim(str) {
   return str.replace(/(^\s*)|(\s*$)/g, "")
 }
 
