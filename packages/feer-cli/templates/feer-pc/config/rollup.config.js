@@ -1,8 +1,8 @@
 /* eslint-disable */
 
-import {
-  name
-} from '../package.json';
+const appConfig = require("./app");// 本地配置
+const { projectName } = appConfig || {};
+
 import postcss from 'rollup-plugin-postcss';
 import babel from 'rollup-plugin-babel';
 import resolve from 'rollup-plugin-node-resolve';
@@ -23,7 +23,7 @@ const {
 export default {
   input: 'src/index.js',
   output: {
-    name,
+    projectName,
     file: BUILD ? 'build/js/index.js' : '.temp/js/index.js',
     format: 'iife',
     extend: true,

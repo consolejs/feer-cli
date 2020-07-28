@@ -1,4 +1,5 @@
 module.exports = {
+    projectName: 'project-name',
     port: 4000,
     pageName:['index'], //pageName: HTML template name
     routerConfig: {
