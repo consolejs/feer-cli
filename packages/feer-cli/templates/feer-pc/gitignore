@@ -4,7 +4,7 @@
 /node_modules
 
 # Temporary development
-.temp/*
+.temp/
 
 # misc
 .DS_Store
