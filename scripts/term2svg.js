@@ -29,7 +29,7 @@ function cut(origin, start, end) {
 }
 
 
-fs.readFile(path.resolve(__dirname, '..', 'screenshot.json'), 'utf8', (err, data) => {
+fs.readFile(path.resolve(__dirname, '..', 'term2svg.json'), 'utf8', (err, data) => {
   if (err) throw err;
   console.log('\nRendering to svg file...\n');
   const verbose = data.split('\n');
@@ -41,8 +41,8 @@ fs.readFile(path.resolve(__dirname, '..', 'screenshot.json'), 'utf8', (err, data
   const svg = render(afterCut.join('\n'), {
     window: true
   });
-  fs.writeFile(path.resolve(__dirname, '..', 'screenshot.svg'), svg, (e) => {
+  fs.writeFile(path.resolve(__dirname, '..', 'term2svg.svg'), svg, (e) => {
     if (e) throw e;
-    console.log('Generate svg scuccess!');
+    console.log('SVG generated successfully!');
   });
 });

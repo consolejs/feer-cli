@@ -11,7 +11,7 @@
 [**中文**](./README.md)
 
 <p align='center'>
-  <img src='./screenshot.svg' width='640' alt='yarn start'>
+  <img src='./term2svg.svg' width='640' alt='yarn start'>
 </p>
 
 ### commander
