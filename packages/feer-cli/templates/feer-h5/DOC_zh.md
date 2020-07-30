@@ -26,6 +26,7 @@ npx feer-cli <project-name>
 ? Which type do you want to create? (Use arrow keys)
 ❯ PC - (build the pc page)
   H5 - (build the h5 page)
+  PC-multi - (build the pc multi-page)
 ```
 
 ### 文件目录结构

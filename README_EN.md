@@ -38,6 +38,7 @@ template selection is provided:
 ? Which type do you want to create? (Use arrow keys)
 ❯ PC - (build the pc page)
   H5 - (build the h5 page)
+  PC-multi - (build the pc multi-page)
 ```
 
 ## directory structure
