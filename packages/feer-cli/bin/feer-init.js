@@ -42,7 +42,7 @@ if (rootExist && !program.overwrite) {
   inquirer.prompt({
     type: 'list',
     name: 'overwrite',
-    message: `Path ${chalk.yellow(root)} is exist, do you want to overwrite it?`,
+    message: `Path ${chalk.hex('#FFB310')(root)} is exist, do you want to overwrite it?`,
     choices: [
       'Exit and Check',
       'OverWrite'
@@ -68,12 +68,16 @@ function selectAppType() {
     message: 'Which type do you want to create?',
     choices: [
       {
-        name: `${chalk.red('PC')} - (build the pc page)`,
+        name: `${chalk.hex('#DF7782')('PC')} - (build the pc page)`,
         value: 'feer-pc'
       },
       {
-        name: `${chalk.green('H5')} - (build the h5 page)`,
+        name: `${chalk.hex('#8bc24c')('H5')} - (build the h5 page)`,
         value: 'feer-h5'
+      },
+      {
+        name: `${chalk.hex('#f29c2b')('PC-multi')} - (build the pc multi-page)`,
+        value: 'feer-pc-multipage'
       }
     ]
   }).then(a => {

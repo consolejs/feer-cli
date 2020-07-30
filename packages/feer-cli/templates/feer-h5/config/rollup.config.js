@@ -20,6 +20,11 @@ const {
   BUILD
 } = process.env;
 
+//随机产生区间数字，如 300~500
+function getRandomArbitrary(min, max) {
+  return Math.floor(Math.random() * (max - min)) + min;
+}
+
 export default {
   input: 'src/index.js',
   output: {
@@ -73,6 +78,7 @@ export default {
     BUILD ?
     null :
     livereload({
+      port: getRandomArbitrary(3e4, 5e4), //随机占用一个端口
       watch: ['views/', '.temp/'] //监听文件夹;
     }),
     BUILD ?

@@ -14,6 +14,7 @@ import { eslint } from 'rollup-plugin-eslint';
 import { string } from 'rollup-plugin-string'; //将html转为js模板
 import { uglify } from 'rollup-plugin-uglify';
 import copy from 'rollup-plugin-copy';
+import multiInput from 'rollup-plugin-multi-input'; //多入口汇总输出插件
 
 const {
   DEV,
@@ -26,11 +27,11 @@ function getRandomArbitrary(min, max) {
 }
 
 export default {
-  input: 'src/index.js',
+  input: 'src/*.js',
   output: {
     projectName,
-    file: BUILD ? 'build/js/index.js' : '.temp/js/index.js',
-    format: 'iife',
+    dir: BUILD ? 'build/js/' : '.temp/js/',
+    format: 'cjs',
     extend: true,
     minify: true,
     globals: {
@@ -40,6 +41,7 @@ export default {
   },
   external: ['jquery'],
   plugins: [
+    multiInput({ relative: 'src/' }),
     jscc(),
     postcss({
       // extract: true, //此时跟js同级目录
