@@ -13,7 +13,7 @@
   },
   "scripts": {
     "eslint": "eslint packages/ scripts/ --ext .js --cache",
-    "screenshot": "cd scripts && node screenshot.js"
+    "term2svg": "cd scripts && node term2svg.js"
   },
   "pre-commit": [
     "eslint"
