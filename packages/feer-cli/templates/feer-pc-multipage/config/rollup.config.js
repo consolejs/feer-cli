@@ -26,6 +26,9 @@ function getRandomArbitrary(min, max) {
   return Math.floor(Math.random() * (max - min)) + min;
 }
 
+//自定义输出css路径
+const cssPath = BUILD ? 'build/css/index.css' : '.temp/css/index.css'; 
+
 export default {
   input: 'src/*.js',
   output: {
@@ -44,8 +47,7 @@ export default {
     multiInput({ relative: 'src/' }),
     jscc(),
     postcss({
-      // extract: true, //此时跟js同级目录
-      extract: BUILD ? 'build/css/index.css' : '.temp/css/index.css', // 自定义输出路径
+      extract: cssPath,
       minimize: {
         reduceIdents: false
       },
