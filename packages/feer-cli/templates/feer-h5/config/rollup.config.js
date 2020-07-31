@@ -73,7 +73,7 @@ export default {
     commonjs(),
     resolve(),
     eslint({
-      exclude: ['src/styles/*'],
+      exclude: ['src/sass/*'],
       fix: true, // Auto fix source code
       throwOnError: true // Throw an error if any errors were found
     }),

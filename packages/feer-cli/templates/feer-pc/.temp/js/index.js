@@ -1,3 +1,3 @@
-import './styles/index.scss';
+import './sass/index.scss';
 
 console.log('Feer');
