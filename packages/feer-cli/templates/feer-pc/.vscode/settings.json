@@ -21,8 +21,7 @@
     "exclude": [
       ".git/**",
       "node_modules/**",
-      "bower_components/**",
-      "src/styles/index.scss" //入口sass文件忽略
+      "src/*/*.scss" //入口sass文件忽略
     ],
     "remove-empty-rulesets": true,
     "always-semicolon": true,

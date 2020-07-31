@@ -72,7 +72,7 @@ template selection is provided:
 ├── libs ---> Can store incoming third party library files
 ├── mods ---> Module business logic
 ├── index.js ---> The entry file: index.js
-└── styles ---> Sass, Source code folder, customizable
+└── sass ---> Sass, Source code folder, customizable
 ```
 
 ### build 文件夹

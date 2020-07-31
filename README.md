@@ -71,7 +71,7 @@ npx feer-cli <project-name>
 ├── libs ---> 可存放引入的第三方库文件
 ├── mods ---> 各模块业务逻辑
 ├── index.js ---> 入口文件index.js
-└── styles ---> scss 源代码文件夹, 可自定义
+└── sass ---> scss 源代码文件夹, 可自定义
 ```
 
 ### views 模板文件
