@@ -8,7 +8,7 @@
     "server": "node config/server",
     "start": "npm-run-all --parallel dev server",
     "build": "rollup -c config/rollup.config.js --environment BUILD && node config/build",
-    "test": "echo 'Unit tests pass!'"
+    "test": "echo \"Error: no test specified\" && exit 1"
   },
   "devDependencies": {
     "@babel/core": "^7.10.5",
