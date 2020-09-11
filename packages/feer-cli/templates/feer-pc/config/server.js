@@ -16,6 +16,9 @@ const ip4 =  addr ? addr.ip() : "127.0.0.1";
 //A better opn. Reuse the same tab on Chrome for 👨‍💻.
 const opn = require('better-opn'); 
 
+// 本地接口.配置
+const dataInfo_Opts = require("./mock/data_info");
+
 fastify.register(require("point-of-view"), {
   engine: {
     nunjucks: require("nunjucks")
@@ -48,8 +51,12 @@ for (let i in routerNames) {
   configRouter(routerNames[i]);
 }
 
+//本地接口.调用
+fastify.get('/api/local', dataInfo_Opts);
+
+
 // proxy
-const pathname = "/api/";
+const pathname = "/api/proxy";
 fastify.get(pathname, async (request, reply) => {
   reply.type("application/json").code(200);
   const url = new URL("https://jsonplaceholder.typicode.com/todos/1");
