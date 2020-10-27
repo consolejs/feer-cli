@@ -2,6 +2,7 @@ module.exports = {
     projectName: 'project-name',
     port: 4000,
     pageName:['index', 'other'], //pageName: HTML template name
+    jsFilename:['index', 'other'], // 页面单独打包，配置js文件名
     routerConfig: {
       //
     },

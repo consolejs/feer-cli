@@ -1,7 +1,7 @@
 /* eslint-disable */
 
 const appConfig = require("./app");// 本地配置
-const { projectName } = appConfig || {};
+const {projectName, jsFilename} = appConfig || {};
 
 import postcss from 'rollup-plugin-postcss';
 import babel from 'rollup-plugin-babel';
@@ -29,7 +29,7 @@ function getRandomArbitrary(min, max) {
 //自定义输出css路径
 const cssPath = BUILD ? 'build/css/index.css' : '.temp/css/index.css'; 
 
-export default {
+const sharedObj = {
   input: 'src/*.js',
   output: {
     projectName,
@@ -58,10 +58,7 @@ export default {
     }),
     BUILD || DEV ?
     copy({
-      targets: [{
-          src: 'src/*.js',
-          dest: BUILD ? 'build/js/' : '.temp/js/'
-        },
+      targets: [
         { // 若不使用本地图片,可改为cdn地址
           src: ['images/*', '!images/sprite'],
           dest: BUILD ? 'build/img/' : '.temp/img/'
@@ -101,3 +98,20 @@ export default {
     exclude: ['node_modules/**']
   }
 }
+
+
+// 通过配置中心的js文件名称，处理为任务数组，作分别打包使用
+const getTargetTask = (jsFiles) => {
+  const tasks = [];
+  jsFiles.map((file) => {
+    tasks.push(Object.assign({}, sharedObj, {input: `src/${file}.js`}))
+  })
+  return tasks
+}
+
+// 获取任务列表
+const taskArray = getTargetTask(jsFilename);
+
+console.log('111',jsFilename)
+
+export default taskArray
