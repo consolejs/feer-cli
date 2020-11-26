@@ -32,8 +32,11 @@
   "rules": {
     //关闭行末分号提示/报错
     "semi": 0,
-    // 强制使用一致的反勾号、双引号或单引号
-    "quotes": [2, "single", "avoid-escape"],
+    /*
+    * 强制使用一致的双引号、单引号或反勾号（backtick）, 0表示不被警报
+    * https://cn.eslint.org/docs/1.0.0/rules/quotes
+    */
+    "quotes": [0, "single", { "avoidEscape": true }],
      // 禁止空语句块
     "no-empty": [
       "error",

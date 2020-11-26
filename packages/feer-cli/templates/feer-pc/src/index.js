@@ -1,3 +1,3 @@
 import './sass/index.scss';
 
-// console.log('Feer');
+console.log('Feer!');
