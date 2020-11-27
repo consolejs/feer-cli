@@ -12,7 +12,7 @@
     "pre-commit": "^1.2.2"
   },
   "scripts": {
-    "eslint": "eslint packages/ scripts/ --ext .js --cache",
+    "eslint": "eslint scripts/ --ext .js --cache",
     "term2svg": "cd scripts && node term2svg.js"
   },
   "pre-commit": [
