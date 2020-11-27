@@ -49,6 +49,7 @@
     // 禁止对 function 声明重新赋值
     "no-func-assign": "off",
     // 禁用不必要的转义字符
-    "no-useless-escape": "off"
+    "no-useless-escape": "off",
+    "max-len" : ["error", {"code" : 300}]
   }
 }

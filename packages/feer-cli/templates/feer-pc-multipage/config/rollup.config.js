@@ -4,15 +4,16 @@ const appConfig = require("./app");// 本地配置
 const {projectName, jsFilename} = appConfig || {};
 
 import postcss from 'rollup-plugin-postcss';
-import babel from 'rollup-plugin-babel';
-import resolve from 'rollup-plugin-node-resolve';
-import commonjs from 'rollup-plugin-commonjs';
-import filesize from 'rollup-plugin-filesize';
-import jscc from 'rollup-plugin-jscc';
+import babel from 'rollup-plugin-babel'; //提供 Babel 能力, 需要安装和配置 Babel 
+import resolve from 'rollup-plugin-node-resolve';//解析 node_modules 中的模块
+import commonjs from 'rollup-plugin-commonjs'; //转换 CJS -> ESM, 通常配合上面一个插件使用
+import filesize from 'rollup-plugin-filesize'; //显示 bundle 文件大小
+import jscc from 'rollup-plugin-jscc';//Rollup的条件编译和编译时变量替换
 import livereload from 'rollup-plugin-livereload'; //热更新
-import { eslint } from 'rollup-plugin-eslint';
-import { string } from 'rollup-plugin-string'; //将html转为js模板
-import { uglify } from 'rollup-plugin-uglify';
+import {eslint} from 'rollup-plugin-eslint'; //提供 ESLint 能力, 需要安装和配置 ESLint 
+import {string} from 'rollup-plugin-string'; //将html转为js模板
+import {uglify} from 'rollup-plugin-uglify'; // 压缩 bundle 文件
+import replace from '@rollup/plugin-replace';//类比 Webpack 的 DefinePlugin , 可在源码中通过 process.env.NODE_ENV 用于构建区分Development 与 Production 环境.
 import copy from 'rollup-plugin-copy';
 import multiInput from 'rollup-plugin-multi-input'; //多入口汇总输出插件
 
@@ -44,6 +45,11 @@ const sharedObj = {
   },
   external: ['jquery'],
   plugins: [
+    replace({
+      "__buildDate__": ()=> JSON.stringify(new Date().toLocaleString()),
+      // __buildVersion: 15,
+      'process.env.NODE_ENV': JSON.stringify(DEV ? "development" : "production")
+    }),
     multiInput({ relative: 'src/' }),
     jscc(),
     postcss({
@@ -72,7 +78,7 @@ const sharedObj = {
     commonjs(),
     resolve(),
     eslint({
-      exclude: ['src/sass/*'],
+      exclude: ['src/**'],
       fix: true, // Auto fix source code
       throwOnError: true // Throw an error if any errors were found
     }),
@@ -111,7 +117,5 @@ const getTargetTask = (jsFiles) => {
 
 // 获取任务列表
 const taskArray = getTargetTask(jsFilename);
-
-console.log('111',jsFilename)
 
 export default taskArray
