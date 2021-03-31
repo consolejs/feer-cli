@@ -5780,7 +5780,7 @@
 "ssri@^8.0.1":
   "integrity" "sha512-aq/pz989nxVYwn16Tsbj1TqFpD5LLrQxHf5zaHuieFV+R0Bbr4y8qUsOA45hXT/N4/9UNXTarBjnjVmjSOVaAA=="
   "resolved" "https://registry.npmjs.org/ssri/-/ssri-8.0.1.tgz"
-  "version" "8.0.0"
+  "version" "8.0.1"
   dependencies:
     "minipass" "^3.1.1"
 
